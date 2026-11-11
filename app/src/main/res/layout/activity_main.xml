@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvDistancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0.0 metros"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/tvUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ubicación actual: --" />
+
+        <EditText
+            android:id="@+id/etEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Estudiante (nombre o código)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etPrecision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precisión del movimiento (metros)"
+            android:inputType="numberDecimal"
+            android:text="1" />
+
+        <EditText
+            android:id="@+id/etSegundos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tiempo de actualización (segundos)"
+            android:inputType="number"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar recorrido" />
+
+        <Button
+            android:id="@+id/btnDetener"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detener y guardar" />
+
+        <Button
+            android:id="@+id/btnReporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver reporte consolidado" />
+
+        <TextView
+            android:id="@+id/tvReporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textIsSelectable="true" />
+    </LinearLayout>
+</ScrollView>
